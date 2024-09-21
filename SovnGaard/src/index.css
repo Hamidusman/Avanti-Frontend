@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 :root{
-    color: #f5d363;
+    color: wh;
     @apply bg-matte
 }

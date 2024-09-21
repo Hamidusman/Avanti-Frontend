@@ -4,6 +4,7 @@ import './App.css'
 import Header from './header'
 import Hero from './hero'
 import About from './about'
+import Review from './review'
 
 function App(){
   
@@ -12,6 +13,7 @@ function App(){
     <Header />
     <Hero />
     <About />
+    <Review />
     
     </>
   )

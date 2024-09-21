@@ -21,7 +21,8 @@ export default {
         primary: '#D4AF37',
         accent: '#f5d363',
         matte: '#28282B',
-        gray: '#CED4DA'
+        gray: '#66666d',
+        smoke: '#f5f5f5'
       }
     },
   },

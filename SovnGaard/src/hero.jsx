@@ -4,10 +4,10 @@ function Hero(){
     return(
         <section className="hero bg-cover bg-center
                             md:px-20
-                            text-gray  h-[100%] font-bold  ">
+                            text-smoke  h-[100%] font-bold  ">
                             
             <div className="flex flex-col justify-center items-center pt-10">
-            <p className="text-[50px]">Experience Something <span className="text-primary">Greater With SovnGaard</span></p>
+            <p className="text-[36px]">Experience Something <span className="text-primary">Greater With SovnGaard</span></p>
             <p className="text-2xl">Secure a spot at our <span className="text-primary">First-Rate</span> Hotel.</p>
 
             <a className="px-5 py-3 mt-5 text-matte hover:bg-accent bg-primary rounded-md" href="http://">Reserve Now!</a>
