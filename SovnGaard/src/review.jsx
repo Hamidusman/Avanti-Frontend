@@ -5,7 +5,7 @@ function Review(){
         <section  className="about 
                              my-10 md:px-20 h-[600px]">
 
-            <header className="  text-2xl my-5 text-smoke">What The <span className="text-primary">Numbers</span> Say</header>
+            <header className="  text-2xl my-5 text-smoke font-bold">What The <span className="text-primary">Numbers</span> Say</header>
 
             <div className="cotainers my-10 flex justify-between text-smoke">
                 <div className="stat-box w-[190px] h-[170px]  bg-primary
@@ -41,7 +41,7 @@ function Review(){
             </div>
 
             
-            <heading className="text-smoke  text-2xl my-5 font-thick">Customers <span className="text-primary">Feedback</span></heading>
+            <heading className="text-smoke  text-2xl my-5 font-bold">Customers <span className="text-primary">Feedback</span></heading>
 
             <div className="flex justify-center gap-10">
                 
