@@ -1,0 +1,9 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    color: #f5d363;
+    @apply bg-matte
+}
