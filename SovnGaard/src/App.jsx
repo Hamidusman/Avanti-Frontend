@@ -5,6 +5,7 @@ import Header from './header'
 import Hero from './hero'
 import About from './about'
 import Review from './review'
+import Contact from './contact'
 
 function App(){
   
@@ -14,6 +15,7 @@ function App(){
     <Hero />
     <About />
     <Review />
+    <Contact />
     
     </>
   )
