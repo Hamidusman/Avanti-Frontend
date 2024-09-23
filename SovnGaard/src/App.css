@@ -3,14 +3,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: blue;
-    transform-origin: 0%;
-    z-index: 2;
-  }

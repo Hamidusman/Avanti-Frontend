@@ -2,20 +2,17 @@ import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './base-components/header'
-import Room from './room'
-/*
+import Room from './hotel-component/room'
+import Modal from './assets/modal'
 
-import Hero from './home/hero'
-import About from './home/about'
-import Review from './home/review'
-import Contact from './home/contact'
-*/
+
+import Hero from './hero'
 function App(){
-  
+
   return (
     <>
     <Header />
-    <Room />
+    <Hero />
     
     </>
   )
