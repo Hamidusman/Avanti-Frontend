@@ -5,7 +5,12 @@
 
 
 .button:hover{
-    box-shadow: -5px 3px 5px 2px gray;
+    box-shadow: 5px 3px 5px 2px rgb(104, 104, 104);
     transition: 0.4s;
     transform: scale(1.05);
 }
+
+.header-bg{
+    background-color: rgba(178, 178, 178, 0.705);
+}
+

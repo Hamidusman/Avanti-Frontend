@@ -11,10 +11,13 @@ function Home(){
     return(
         <>
             <Header />
+            <main>
+                
             <Hero />
             <About />
             <Review />
             <Contact />
+            </main>
         </>
     )
 }

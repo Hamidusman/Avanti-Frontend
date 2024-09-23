@@ -3,7 +3,7 @@ import Reveal from "../animations/reveal";
 function Contact(){
 
     return(
-        <section className="md:px-20">
+        <section className="md:px-20  px-2">
 
             <header className="text-2xl my-5 text-smoke font-bold">Our <span className="text-primary">Contacts</span></header>
 

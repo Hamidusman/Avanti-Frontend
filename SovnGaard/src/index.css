@@ -5,7 +5,7 @@
 
 :root{
     color: wh;
-    @apply bg-matte
+    @apply bg-matte;
 }
 
 

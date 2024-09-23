@@ -5,7 +5,7 @@ import Reveal from "../animations/reveal";
 function Hero(){
     return(
         <section className="hero bg-cover bg-center
-                            md:px-20
+                            md:px-20 px-2
                             text-smoke  h-[100vh] font-bold  ">
                             
             <div className="flex flex-col text-center justify-center items-center pt-10">
@@ -13,7 +13,7 @@ function Hero(){
                     
                     <motion.p
                     whileHover={{scale: 0.95}}
-                    transition={{duration: 0.5}} className="text-[25px]  sm:text-[28px] md:text-[33px] lg:text-[40px]">Experience Something <span className="text-primary">Greater With SovnGaard</span></motion.p>
+                    transition={{duration: 0.5}} className="text-[25px]  sm:text-[28px] md:text-[33px] lg:text-[40px]">Experience Something <span className="text-primary">Greater With Mojave</span></motion.p>
                     <p className="text-lg md:text-[22px] lg:text-[25px]">Secure a spot at our <span className="text-primary">First-Rate</span> Hotel.</p>
 
                 </Reveal>

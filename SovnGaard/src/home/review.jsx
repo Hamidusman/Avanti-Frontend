@@ -3,7 +3,7 @@ import NumberCount from "../animations/numberCount"
 function Review(){
     return(
         <section  className=" 
-                             my-10 md:px-20     ">
+                             my-10 md:px-20  px-2     ">
 
             <header className="  text-2xl my-5 text-smoke font-bold">What The <span className="text-primary">Numbers</span> Say</header>
 
