@@ -7,15 +7,20 @@ function Room(){
             <div className="w-[100%] bg-smoke text-center font-bold text-[12px]">If you are impressed by my work, You could buy me my favorite biscuit (Fabs!) here</div>
 
             <section className="md:mx-10">
-                <article className="mt-5 flex">
+                <article className="mt-5 flex lg:flex-row flex-col">
                     <div>
                         <h1 className="text-2xl mb-1 text-primary font-bold">Da Classica</h1>
-                        <div className="w-[750px] h-[450px] bg-primary"></div>
+                        <div className="w-[350px] h-[230px]
+                        flex-wrap wrap
+                                        sm:bg-gray sm:w-[580px] sm:h-[320px]
+                                        md:w-[710px] md:h-[450px]
+                                         bg-primary"></div>
                         
                     </div>
 
                     
-                    <div className="ml-5 text-smoke font-bold">
+                    <div className="lg:ml-5 mt-3 lg:mt-0 text-smoke flex lg:flex-col flex-col-reverse font-bold">
+                        <div className="">
                         <h1 className="text-2xl  text-primary">Room Details</h1> 
                         <ul className="">
                             <li className="mt-5">Beds: 1</li>
@@ -27,13 +32,15 @@ function Room(){
                             
                             <li className="mt-5">Sauna Room:</li>
                             <li className="mt-5">VIP Lounge:</li>
-                            <li className="mt-5">Spa Room:</li>  
-                            <div className="mt-5">
-                                <a href="http://" className="px-5 py-3 bg-gray
-                                                             rounded-md
-                                                             hover:bg-primary hover:text-matte">Book Now</a>
-                            </div>
-                        </ul>
+                            <li className="mt-5">Spa Room:</li>
+                            </ul>
+                        </div>
+                        <div className="my-5">
+                            <a href="http://" className="px-5 py-3 bg-gray
+                                                            rounded-md
+                                                            hover:bg-primary transition duration-300 ease-in-out hover:text-matte">Book Now</a>
+
+                        </div>
                     </div>
 
                 </article>

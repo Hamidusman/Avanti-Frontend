@@ -18,12 +18,20 @@ export default {
      */
     extend: {
       colors: {
-        primary: '#D4AF37',
+        primary: '#FFD700',
         accent: '#f5d363',
         matte: '#28282B',
         gray: '#66666d',
         smoke: '#f5f5f5'
-      }
+      },
+      screens: {
+        'xs': '375px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px', 
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],
