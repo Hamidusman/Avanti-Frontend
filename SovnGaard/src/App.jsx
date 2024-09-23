@@ -2,7 +2,7 @@ import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './base-components/header'
-import Rooms from './rooms'
+import Room from './room'
 /*
 
 import Hero from './home/hero'
@@ -14,8 +14,7 @@ function App(){
   
   return (
     <>
-    <Header />
-    <Rooms />
+    <Room />
     
     </>
   )
