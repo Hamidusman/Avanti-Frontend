@@ -1,7 +1,14 @@
 
 import { motion, useScroll } from "framer-motion";
-import './App.css'
+import Modal from "../assets/modal";
+import { useState } from "react";
 function Room(){
+
+    const[openModal, setOpen] = useState(false)
+  
+    const close = () => setOpen(false)
+    const open = () => setOpen(true)
+    
     return(
         <>
             <div className="w-[100%] bg-smoke text-center font-bold text-[12px]">If you are impressed by my work, You could buy me my favorite biscuit (Fabs!) here</div>
@@ -36,10 +43,17 @@ function Room(){
                             </ul>
                         </div>
                         <div className="my-5">
-                            <a href="http://" className="px-5 py-3 bg-gray
-                                                            rounded-md
-                                                            hover:bg-primary transition duration-300 ease-in-out hover:text-matte">Book Now</a>
+                            <motion.button
+                            whileHover={{ scale:1.1 }}
+                            whileTap={{ scale:0.9 }}
+                            className="px-5 py-3 bg-gray 
+                                       rounded-md
+                                       hover:bg-primary
+                                       hover:text-matte"
+                            onClick={() => (openModal ? close() : open())}
+                            >Launch</motion.button>
 
+                            {openModal && <Modal openModal={openModal} handleClose={close} />}
                         </div>
                     </div>
 

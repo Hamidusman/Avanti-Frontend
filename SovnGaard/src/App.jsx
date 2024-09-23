@@ -1,21 +1,16 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './App.css'
-import Header from './base-components/header'
-import Room from './room'
-/*
 
-import Hero from './home/hero'
-import About from './home/about'
-import Review from './home/review'
-import Contact from './home/contact'
-*/
+import Home from './home/homepage'
+
+
 function App(){
-  
+
   return (
     <>
-    <Header />
-    <Room />
+    <Home />
     
     </>
   )

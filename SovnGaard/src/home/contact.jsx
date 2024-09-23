@@ -1,4 +1,4 @@
-
+import Reveal from "../animations/reveal";
 
 function Contact(){
 
@@ -9,18 +9,26 @@ function Contact(){
 
             <form action="" method="post" className="text-smoke my-5
                                                      flex flex-col items-center">
-                <div className="flex flex-col mb-4 ">
+                <Reveal><div className="flex flex-col mb-4 ">
                     <label htmlFor="">Your Email</label>
                     <input type="email" className="rounded-md text-matte px-2 w-[330px]" />
-                </div>
+                </div></Reveal>
 
-                <div className="flex flex-col mb-4 ">
-                    <label htmlFor="">Your Message</label>
-                    <textarea className="w-[330px] h-[270px] rounded-md text-matte p-1" name="" id=""></textarea>
-                </div>
-                <button type="submit" className="bg-gray hover:bg-primary hover:text-matte
-                                                 px-7 py-1 mb-4 rounded-md 
-                                                 w-[330px]">Send</button>
+                <Reveal>
+                    
+                    <div className="flex flex-col mb-4 ">
+                        <label htmlFor="">Your Message</label>
+                        <textarea className="w-[330px] h-[270px] rounded-md text-matte p-1" name="" id=""></textarea>
+                    </div>
+                </Reveal>
+                
+                <Reveal>
+                    <button type="submit" className="bg-gray hover:bg-primary hover:text-matte
+                                                    transition duration-[.8s] ease-in-out
+                                                    px-7 py-1 mb-4 rounded-md 
+                                                    w-[330px]">Send
+                    </button>
+                </Reveal>
             </form>
 
         </section>
