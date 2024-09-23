@@ -1,5 +1,5 @@
 import Reveal from "../animations/reveal"
-
+import NumberCount from "../animations/numberCount"
 function Review(){
     return(
         <section  className=" 
@@ -11,28 +11,9 @@ function Review(){
                 <Reveal>
                 <div className="stat-box w-[190px] h-[170px]  bg-primary
                                 flex flex-col justify-center items-center">
-                    <h1 className="text-[45px]">23</h1>
-                    <p>Total Reservations</p>
-                </div>
-                </Reveal>
-                <Reveal>
-                <div className="stat-box w-[190px] h-[170px]  bg-primary
-                                flex flex-col justify-center items-center">
-                    <h1 className="text-[45px]">23</h1>
-                    <p>Total Reservations</p>
-                </div>
-                </Reveal>
-                <Reveal>
-                <div className="stat-box w-[190px] h-[170px]  bg-primary
-                                flex flex-col justify-center items-center">
-                    <h1 className="text-[45px] ">23</h1>
-                    <p>Total Reservations</p>
-                </div>
-                </Reveal>
-                <Reveal>
-                <div className="stat-box w-[190px] h-[170px]  bg-primary
-                                flex flex-col justify-center items-center">
-                    <h1 className="text-[45px]">23</h1>
+                    <h1 className="text-[45px]">
+                        <NumberCount from={0} to={500} duration={3000} />
+                    </h1>
                     <p>Total Reservations</p>
                 </div>
                 </Reveal>

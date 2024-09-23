@@ -1,18 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Reveal from "../animations/reveal";
 
 function Hero(){
     return(
         <section className="hero bg-cover bg-center
                             md:px-20
-                            text-smoke  h-[100%] font-bold  ">
+                            text-smoke  h-[100vh] font-bold  ">
                             
             <div className="flex flex-col text-center justify-center items-center pt-10">
-            <motion.p
-            whileHover={{scale: 0.95}}
-            transition={{duration: 0.5}} className="text-[25px]  sm:text-[28px] md:text-[33px] lg:text-[40px]">Experience Something <span className="text-primary">Greater With SovnGaard</span></motion.p>
-            <p className="text-lg md:text-[22px] lg:text-[25px]">Secure a spot at our <span className="text-primary">First-Rate</span> Hotel.</p>
+                <Reveal>
+                    
+                    <motion.p
+                    whileHover={{scale: 0.95}}
+                    transition={{duration: 0.5}} className="text-[25px]  sm:text-[28px] md:text-[33px] lg:text-[40px]">Experience Something <span className="text-primary">Greater With SovnGaard</span></motion.p>
+                    <p className="text-lg md:text-[22px] lg:text-[25px]">Secure a spot at our <span className="text-primary">First-Rate</span> Hotel.</p>
 
+                </Reveal>
             <motion.a
             whileHover={{y: 5}}
             transition={{duration: 0.4}} className="animate-pulse px-5 py-3 mt-5 text-matte hover:bg-accent bg-primary rounded-md" href="http://">Reserve Now!</motion.a>
