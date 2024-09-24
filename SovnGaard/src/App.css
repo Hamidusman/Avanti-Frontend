@@ -11,6 +11,21 @@
 }
 
 .header-bg{
-    background-color: rgba(178, 178, 178, 0.705);
+    background-color: ;
 }
 
+
+form{
+    
+    background-color: rgba(178, 178, 178, 0.213)
+}
+.form-input{
+    border-bottom: 2px solid #FFD700;
+    
+}
+
+.form-input:focus{
+    border-bottom: 2px solid blue;
+
+    
+}

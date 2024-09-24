@@ -30,10 +30,10 @@ function Header() {
     return (
         <Headroom>
             
-        <header className=" py-4 px-2 text-matte md:text-primary sticky top-0 md:px-20 bg-primary md:bg-transparent z-[3] flex justify-between items-center">
+        <header className=" py-4 px-2 text-matte md:text-primary sticky top-0 md:px-20 bg-primary md:bg-smoke z-[3] flex justify-between items-center">
 
             <Reveal>
-                <h1 className="text-xl font-bold">Mojave</h1>
+                <h1 className="text-xl font-bold">Avanti</h1>
             </Reveal>
 
             <Reveal>

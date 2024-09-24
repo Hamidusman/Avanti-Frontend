@@ -3,14 +3,16 @@ import viteLogo from '/vite.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './App.css'
 
-import Home from './home/homepage'
+import Header from './base-components/header';
+import Room from './hotel-component/room';
 
 
 function App(){
 
   return (
     <>
-    <Home />
+    <Header />
+    <Room />
     
     </>
   )
