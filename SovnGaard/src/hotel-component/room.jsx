@@ -1,11 +1,31 @@
 
 import { motion, useScroll } from "framer-motion";
+import axios from "axios";
 import Modal from "../assets/modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom"
+
 function Room(){
 
+    const {id} = useParams();
+    const [ room, setRoom ] = useState(null)
     const[openModal, setOpen] = useState(false)
-  
+
+    useEffect(() => {
+        const fetchRoom = async () => {
+            try{
+                const response = await axios.get(`http://127.0.0.1:8000/hotel/${id}`)
+                setRoom(response.data)
+            }
+            catch(error){
+                console.error('Error fetching data', error)
+            }
+        }
+        fetchRoom()
+    }, [id])
+
+    if (!room) return <h1>Loading....</h1>
+
     const close = () => setOpen(false)
     const open = () => setOpen(true)
     
@@ -16,7 +36,7 @@ function Room(){
             <section className="md:mx-10">
                 <article className="mt-5 flex lg:flex-row flex-col">
                     <div>
-                        <h1 className="text-2xl mb-1 text-primary font-bold">Da Classica</h1>
+                        <h1 className="text-2xl mb-1 text-primary font-bold">{room.title}</h1>
                         <div className="w-[350px] h-[230px]
                         flex-wrap wrap
                                         sm:bg-gray sm:w-[580px] sm:h-[320px]

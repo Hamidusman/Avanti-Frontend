@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 
+.tiers-container:hover{
+    transform: scale(1.04);
+}
+
 .button:hover{
     box-shadow: 5px 3px 5px 2px rgb(104, 104, 104);
     transition: 0.4s;
