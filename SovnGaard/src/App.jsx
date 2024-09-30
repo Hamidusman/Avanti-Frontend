@@ -3,20 +3,17 @@ import viteLogo from '/vite.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './App.css'
 
-import Header from './base-components/header';
-import Room from './hotel-component/room';
+import Home from './home/homepage';
 
 
 function App(){
 
   return (
     <>
-    <Header />
-    <Room />
+    <Home />
     
     </>
   )
 }
-
 
 export default App
