@@ -4,16 +4,13 @@ import axios from 'axios'
 import NumberCount from "../animations/numberCount" 
 
 function Review() {
-    const [stats, setStats] = useState({ bookings: 0, total_rooms: 0 });
+    const [stats, setStats] = useState([]);
 
     useEffect(() => {
         const fetchStats = async () => {
             try {
                 const response = await axios.get('http://127.0.0.1:8000/stat/kkk/');
-                setStats({
-                    bookings: response.data.bookings,
-                    total_rooms: response.data.total_rooms,
-                });
+                setStats(response.data);
             } catch (error) {
                 console.error('Error fetching data: ', error);
             }
@@ -24,7 +21,7 @@ function Review() {
 
     const statItem = [
         {label: 'Total Bookings', value: stats.bookings},
-        {label: 'Registed Rooms', value: stats.total_rooms},
+        {label: 'Rooms', value: stats.total_rooms},
     ]
 
     return(
@@ -39,7 +36,9 @@ function Review() {
                     <div className="stat-box w-[190px] h-[170px]  bg-primary
                                     flex flex-col justify-center items-center">
                         <h1 className="text-[45px]">
-                            {item.value}
+                            <NumberCount from={0} to={item.value} duration={2000}>
+
+                            </NumberCount>
                         </h1>
                         <p>{item.label}</p>
                     </div>
