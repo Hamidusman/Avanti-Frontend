@@ -24,7 +24,7 @@ function Review() {
 
     const statItem = [
         {label: 'Total Bookings', value: stats.bookings},
-        {label: 'Registed Rooms', value: stats.total_rooms},
+        {label: 'Rooms', value: stats.total_rooms},
     ]
 
     return(
