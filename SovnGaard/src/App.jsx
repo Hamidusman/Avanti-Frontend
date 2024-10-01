@@ -15,7 +15,7 @@ function App(){
     <Router>
       <Routes>
             <Route path="/hotel/:id" element={<Room />} />
-            <Route path="/hotel" exact element={<Rooms />} /> 
+            <Route path="/hot" exact element={<Rooms />} /> 
       </Routes>
     </Router>
   )
