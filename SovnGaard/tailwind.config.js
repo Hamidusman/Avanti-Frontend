@@ -13,7 +13,7 @@ export default {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
-      },
+      },<a href="https://storyset.com/web">Web illustrations by Storyset</a>
     },
      */
     extend: {

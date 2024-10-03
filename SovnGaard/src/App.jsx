@@ -6,6 +6,7 @@ import './App.css'
 
 import Rooms from './hotel-component/rooms';
 import Room from './hotel-component/room';
+import BookingForm from './hotel-component/bookingForm';
 import Home from './home/homepage';
 
 
@@ -14,8 +15,7 @@ function App(){
   return (
     <Router>
       <Routes>
-            <Route path="/hotel/:id" element={<Room />} />
-            <Route path="/hot" exact element={<Rooms />} /> 
+            <Route path="" element={<Home />} />
       </Routes>
     </Router>
   )
