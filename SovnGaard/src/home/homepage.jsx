@@ -6,6 +6,7 @@ import Review from './review'
 import Header from '../base-components/header'
 
 import Contact from './contact'
+import Footer from './footer'
 
 function Home(){
     return(
@@ -17,6 +18,7 @@ function Home(){
             <About />
             <Review />
             <Contact />
+            <Footer />
             </main>
         </>
     )

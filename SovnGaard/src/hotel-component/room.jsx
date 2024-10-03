@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Header from "../base-components/header";
 
 function Room() {
   const { id } = useParams();
   const [room, setRoom] = useState(null);
   const [amenities, setAmenities] = useState([]);
+  const navigate = useNavigate()
 
   // Fetch room data
   useEffect(() => {
@@ -35,7 +36,11 @@ function Room() {
     fetchAmenities();
   }, []);
 
-  if (!room) return <h1>Loading....</h1>;
+  const HandleBooking = () =>{
+    navigate(`/booking/`, {state: { room }})
+  }
+
+  if (!room) return <h1>Brrr! Came Across An Error :(....</h1>;
 
   // Map amenity IDs from the room to the actual amenity names
   const getAmenityName = (id) => {
@@ -86,6 +91,7 @@ function Room() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="px-5 py-3 bg-gray rounded-md hover:bg-primary hover:text-matte"
+                onClick={HandleBooking}
               >
                 Book Now
               </motion.button>
