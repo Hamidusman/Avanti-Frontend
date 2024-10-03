@@ -57,10 +57,7 @@ function Review() {
                                     flex flex-col px-2 py-3 mt-5 justify-between items-center
                                     rounded-lg">
 
-                        <span>ksidwpsonsdwsldldwdw
-                            dwddwsdwdds
-                            sdwdwwwwwwassss
-                            ssssssssssssssssssss
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero harum, nesciunt, mollitia unde recusandae sequi totam ipsam accusamus officia aut veritatis iure quod facilis odit quidem corporis exercitationem. Eaque, animi.
                         </span>
 
                         <h5>Hamid Usman</h5>
@@ -73,10 +70,7 @@ function Review() {
                                     flex flex-col px-2 py-3 mt-5 justify-between items-center
                                     rounded-lg">
 
-                        <span>ksidwpsonsdwsldldwdw
-                            dwddwsdwdds
-                            sdwdwwwwwwassss
-                            ssssssssssssssssssss
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, recusandae. Beatae harum quibusdam non, nisi id unde, voluptatum nam possimus aperiam, reiciendis asperiores doloribus sed. Nam corporis alias atque ex.
                         </span>
 
                         <h5>Hamid Usman</h5>
@@ -89,10 +83,7 @@ function Review() {
                                     flex flex-col px-2 py-3 mt-5 justify-between items-center
                                     rounded-lg">
 
-                        <span>ksidwpsonsdwsldldwdw
-                            dwddwsdwdds
-                            sdwdwwwwwwassss
-                            ssssssssssssssssssss
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quasi earum, error adipisci qui atque officiis nihil voluptates mollitia magni quas, dignissimos veniam fuga quibusdam provident vel suscipit deleniti iste?
                         </span>
 
                         <h5>Hamid Usman</h5>
